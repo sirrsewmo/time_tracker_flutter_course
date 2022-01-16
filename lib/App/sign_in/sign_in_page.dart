@@ -5,7 +5,7 @@ class SignInPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('time tracker'),
+        title: Center(child: Text('Time Tracker')),
         elevation: 2.0,
       ),
       body: _buildContent(),
@@ -13,23 +13,22 @@ class SignInPage extends StatelessWidget {
   }
 
   Widget _buildContent() {
-    return Container(
-      color: Colors.yellow,
+    return Padding(
+      padding: EdgeInsets.all(16.0),
+      //color: Colors.yellow,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Container(
-            color: Colors.orange,
-            child: SizedBox(
-              height: 100.00,
-            ),
-          ),
+          Text('Sign in'),
+          SizedBox(height: 8.0),
           Container(
             color: Colors.red,
             child: SizedBox(
               height: 100.00,
             ),
           ),
+          SizedBox(height: 8.0),
           Container(
             color: Colors.purple,
             child: SizedBox(
